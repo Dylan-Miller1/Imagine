@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content%}
+  <html>
+
+  <head>
+    <title>Imagine - About This Project</title>
+  </head>
+
+  <body>
+    <h1>About This Project</h1>
+    <div class="center_container_left_no_border">
+      <h3><b>Creator:</b> Dylan Miller</h3>
+      <p>"Imagine" serves as a visualization tool, enabling users to imagine and immerse themselves 
+        in their perfect day. While creating a fun and interactive experience was essential, my primary 
+        goal with this project was to gain hands-on experience with various software and technologies, including Flask, Terraform, AWS, 
+        Docker, and more. Aspiring to be a proficient DevOps engineer, projects like this have been 
+        invaluable in deepening my understanding of key technologies and honing my ability to bring 
+        ideas to life.
+      </p>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/flask_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Flask</h5>
+              <p class="card-text">Utilized as the web framework to build the website and handle user 
+                interactions for inputting keywords and displaying the generated "day in the life" scenarios 
+                from the ChatGPT API.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/aws_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">AWS</h5>
+              <p class="card-text">Provisioned a Linux AMI EC2 instance using Terraform to host the 
+                Flask application, offering a scalable and accessible infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/terraform_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Terraform</h5>
+              <p class="card-text">Used to define the infrastructure as code, automating the setup of the AWS EC2 instance, 
+                ensuring reproducibility and consistency in the deployment process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/docker_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Docker</h5>
+              <p class="card-text">Containerized the Flask application along with its dependencies, ensuring consistent 
+                deployment across different environments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/sqlite_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">SQLite</h5>
+              <p class="card-text">Employed as the lightweight relational database management system to store user responses, 
+                facilitating public sharing of "day in the life" scenarios on the site.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/jinja_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Jinja</h5>
+              <p class="card-text">Integrated as the templating engine within the Flask application allowing for 
+                dynamic content rendering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/github_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">GitHub</h5>
+              <p class="card-text">Utilized as the version control system to host the code repository, 
+                enabling efficient collaboration, version tracking, and integration with a future CI/CD pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./static/images/chatgpt_icon.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">ChatGPT API</h5>
+              <p class="card-text">Integrated into the Flask application, enabling users to input keywords and 
+                receive customized responses, forming their personalized "day in the life" scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  </html>
+{% endblock content%}

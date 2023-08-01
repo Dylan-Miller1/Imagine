@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <html>
+        
+    <head>
+        <title>Imagine - Shared</title>
+    </head>
+
+    <body>
+        <h1>Shared Prompts</h1>
+        <div class="center_container_left">
+            {% for post in posts %}
+                <p> <b>Date:</b> {{ post[0] }}</p>
+                <p> <b>User Keywords:</b> {{ post[1] }}</p>
+                <p> {{ post[2] }}</p>
+                <br></br>
+            {% endfor %}
+        </div>
+    </body>
+
+    </html>
+{% endblock content %}

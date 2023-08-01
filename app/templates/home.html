@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content%}
+    <html>
+    <head>
+        <title>Imagine - Home</title>
+    </head>
+
+    <body>
+        <h1>Welcome To Imagine</h1>
+        <div class="center_container">
+            <p>Visualization plays a crucial role in achieving your goals. 
+                Let's create a vivid representation of an ideal day. 
+                Input at least 5 elements that describe your perfect day, 
+                these can include things like people, places, objects, activities, visuals, emotions etc.
+            </p>
+            
+            <form action="#" method="post">
+                <p><b>Example:</b> calm early morning sunrise by the ocean, walking my dog, playing golf, going out to dinner for sushi, light rain, watching a good movie</p>
+                <div class="input_box">
+                    <p><textarea type="text" name="keywords" class="input_box"></textarea></p>
+                </div>
+                <p><button type="submit" class="btn btn-light">Submit</button></p>
+            </form> 
+        </div>
+    </body>
+
+    </html>
+{% endblock content%}

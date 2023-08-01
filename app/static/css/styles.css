@@ -1,0 +1,67 @@
+body{
+  background-color:rgb(0, 0, 0);
+  background-image: url("../images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.center_container {
+  border: 1px solid #212121;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: auto;
+  text-align: center;
+  color: #d4c9c9;
+  overflow: auto;
+  backdrop-filter: blur(20px);
+}
+
+.center_container_left {
+  border: 1px solid #f5f5f5;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: auto;
+  text-align: left;
+  color: #d4c9c9;
+  overflow: auto;
+  backdrop-filter: blur(20px);
+}
+
+.center_container_left_no_border {
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: auto;
+  text-align: left;
+  color: #d4c9c9;
+  overflow: auto;
+  backdrop-filter: blur(20px);
+}
+
+.input_box {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 375px;
+  height: 250px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: #0d6561;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #d4c9c9;
+}
