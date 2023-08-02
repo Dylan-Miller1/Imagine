@@ -8,7 +8,7 @@
 ## Tech Stack Used To Create This App
 To learn more about what was used to create this app please visit the [About This Project](http://34.238.232.58:3000/about) page.
 
-## Find Imagine On Docker
+## Find Imagine On DockerHub
 If you would like to host your own version of Imagine, you can find the Docker image along with instructions on how to deploy the image correctly on DockerHub.  
 
 [Imagine on DockerHub](https://hub.docker.com/repository/docker/dm1ller/imagine/general)
