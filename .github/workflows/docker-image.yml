@@ -13,5 +13,5 @@ jobs:
     
       - name: Build the Docker image
         run: |
-          docker build ./app --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/imagine:$(date +%s)
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/imagine:$(date +%s) ./app
           docker push ${{ secrets.DOCKER_USERNAME }}/imagine:latest
