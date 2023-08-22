@@ -3,13 +3,13 @@ name: Docker Image CI
 on:
   workflow_dispatch
 
-env:
-  IMAGE_NAME: dm1ller/imagine
-  IMAGE_TAG: 1.0.${{ github.run_number }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    env:
+      IMAGE_NAME: dm1ller/imagine
+      IMAGE_TAG: 1.0.${{ github.run_number }}
 
     steps:
       - name: Checkout code
