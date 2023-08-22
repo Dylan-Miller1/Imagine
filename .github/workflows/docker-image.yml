@@ -19,5 +19,5 @@ jobs:
     
       - name: Build and push docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/imagine:$(date +%s) ./app
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/imagine:latest ./app
           docker push ${{ secrets.DOCKER_USERNAME }}/imagine:latest
