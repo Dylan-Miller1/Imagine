@@ -20,5 +20,5 @@ jobs:
       - name: Build and push docker image
         run: |
           TIMESTAMP=${{ steps.timestamp.outputs.timestamp }}
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/imagine:TIMESTAMP ./app
-          docker push ${{ secrets.DOCKER_USERNAME }}/imagine:TIMESTAMP
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/imagine:$TIMESTAMP ./app
+          docker push ${{ secrets.DOCKER_USERNAME }}/imagine:$TIMESTAMP
