@@ -39,5 +39,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            docker stop $(docker ps -q)
             docker pull ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
             docker run -d -p 3000:3000 -e "chatgpt_api= ${{ secrets.CHATGPT_API }}" ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
