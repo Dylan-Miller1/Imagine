@@ -27,7 +27,7 @@ jobs:
           docker push ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
       
       - name: Set up SSH key
-        uses: shimataro/secure-env-action@v2
+        uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
 
