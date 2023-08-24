@@ -1,8 +1,5 @@
 body{
   background-color:rgb(0, 0, 0);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 
