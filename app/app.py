@@ -4,10 +4,6 @@ from chatgpt_api import get_chatgpt
 from create_database import db_create
 from database_interaction import db_write, db_get_recent
 
-#Check if database exists. If not, create it.
-if os.path.exists("prompts.db") == False:
-    db_create()
-
 app = Flask(__name__)
 
 #Home page for user to input keywords

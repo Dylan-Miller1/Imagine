@@ -4,6 +4,7 @@ import openai
 #Pull the environment variable for the chatGPT api key
 openai.api_key = os.environ["chatgpt_api"]
 
+
 #Get chatgpt response to user prompt
 def get_chatgpt(prompt):
     #Create full prompt with instructions and user input
