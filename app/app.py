@@ -1,12 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
 from chatgpt_api import get_chatgpt
-from create_database import db_create
 from database_interaction import db_write, db_get_recent
-
-#Check if database exists. If not, create it.
-if os.path.exists("prompts.db") == False:
-    db_create()
 
 app = Flask(__name__)
 
